@@ -11,6 +11,7 @@ public class SolutionsTest {
 		MaximumSubarray obj = new MaximumSubarray();
 		int[] nums = new int[] {-2,1,-3,4,-1,2,1,-5,4};
 		assertTrue(obj.maxSubArray(nums) == 6);
+		assertTrue(obj.maxSubArray_2(nums) == 6);
 	}
 
 }

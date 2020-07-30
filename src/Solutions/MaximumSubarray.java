@@ -20,4 +20,14 @@ public class MaximumSubarray {
         }
         return max;
     }
+	
+	 public int maxSubArray_2(int[] nums) {
+	        int maxSum = Integer.MIN_VALUE;
+	        int nextSum = 0;
+	        for(int i=0;i<nums.length;i++){
+	            nextSum = nextSum + nums[i] < nums[i] ? nums[i] : nextSum + nums[i] ;
+	            maxSum = nextSum > maxSum ? nextSum : maxSum;        
+	        }
+	        return maxSum;
+	    }
 }
